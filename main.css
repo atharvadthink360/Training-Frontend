@@ -1,0 +1,19 @@
+h2{
+    color: bisque;
+}
+
+#actBtn{
+    color: firebrick;
+    float:right;
+}
+
+#mainForm{
+    align-self: center;
+    color: aquamarine;
+    margin-top: 10%;
+}
+
+#loginForm{
+    display: none;
+}
+
