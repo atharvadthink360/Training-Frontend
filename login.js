@@ -44,8 +44,23 @@ function loginDetails() {
             
             if ((username == details.username) && (password == details.password)){
                 localStorage.setItem("loggedIn", true);
+
+                var user = "Hello " + username;
+                document.getElementById("usernameVal").innerHTML = user;
+                document.getElementById("usernameVal").style.display = "block";
+
                 document.getElementById("actBtn").innerHTML = "Logout";
-                personalDetails();
+                document.getElementById("actBtn").style.display = "block";
+
+                if (details.step == 1) {
+                    personalDetails();
+                } else if (details.step == 2) {
+                    govtDetails();
+                } else if (details.step == 3) {
+                    addressDetails();
+                } else {
+                    summaryDetails();
+                }
             } else{
                 alert("Wrong Credentials");
             }

@@ -6,21 +6,21 @@ function summaryDetails(){
     // var form = document.createElement("form");
 
     const as = document.getElementById("mainsection");
-    as.setAttribute("id", "allDetails")
 
     as.innerHTML = "";
 
-    var title = document.createElement("h1")
-    var titleNode = document.createTextNode('Summary Page');
+    var title = document.createElement("h1");
+    var titleNode = document.createTextNode("Summary Page");
     title.appendChild(titleNode);
-    as.appendChild(title)
-    title.setAttribute("id","heading")
+    as.appendChild(title);
+    title.setAttribute("id", "heading");
 
     const infoTable = document.createElement("table");
+    infoTable.setAttribute("id", "infoTable");
 
-    let tr = document.createElement("tr")
-    let td1 = document.createElement("td")
-    let td2 = document.createElement("td")
+    let tr = document.createElement("tr");
+    let td1 = document.createElement("th");
+    let td2 = document.createElement("th");
     td1.innerHTML = "Field";
     td2.innerHTML = "Value";
     tr.appendChild(td1);
