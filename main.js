@@ -6,10 +6,20 @@ function addElement() {
     var h = document.getElementById("header");
     // document.body.appendChild(h);
 
-    var p = document.createElement("p");
+    var p = document.createElement("span");
+    p.setAttribute("id", "headerVal");
     var txt = document.createTextNode("Info Tracker");
     p.appendChild(txt);
     h.appendChild(p);
+
+    var accountStatus = document.createElement("span");
+    accountStatus.setAttribute("id", "accountStatus");
+
+    var name = document.createElement("span");
+    name.setAttribute("id", "usernameVal");
+    accountStatus.appendChild(name);
+
+    var loginBtn = document.createElement("span");
 
     var accountStatusBtn = document.createElement("button");
 
@@ -18,13 +28,24 @@ function addElement() {
     var btnText = "Login";
     accountStatusBtn.innerHTML = btnText;
 
-    h.appendChild(accountStatusBtn);
+    loginBtn.appendChild(accountStatusBtn);
+
+    accountStatus.appendChild(loginBtn);
+
+    h.appendChild(accountStatus);
+
+    loginDetails();
 
     accountStatusBtn.onclick = function (event) {
         // document.getElementById("mainsection").style.display = "block";
         // btnCheck();
+
+        localStorage.setItem("loggedIn", false);
+
+        document.getElementById("actBtn").style.display = "none";
+        document.getElementById("usernameVal").style.display = "none";
         loginDetails();
-    }
+    };
 
     // Create a break line element
     // var br = document.createElement("br");

@@ -1,11 +1,8 @@
-h2{
+/* h2{
     color: bisque;
 }
 
-#actBtn{
-    color: firebrick;
-    float:right;
-}
+
 
 #mainForm{
     align-self: center;
@@ -16,4 +13,218 @@ h2{
 #loginForm{
     display: none;
 }
+ */
 
+#header {
+    text-align: left;
+    margin-left: 10px;
+    /* margin-left: 200px; */
+    margin-top: 10px;
+    padding: 1%;
+    font-weight: bold;
+    background-color: aqua;
+}
+
+#infoTable {
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+}
+
+tr {
+    text-align: center;
+}
+
+#usernameVal {
+    font-size: small;
+    position: absolute;
+    right: 7%;
+    display: inline-block none;
+    /* margin-left: auto; */
+}
+
+#actBtn {
+    /* text-align: right; */
+    display: none;
+    border-radius: 20px;
+    position: absolute;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    right: 0%;
+    border: 0px;
+    /* text-align: end; */
+    box-shadow: 0px 0px 2px 2px rgb(123, 121, 121);
+    /* justify-content: end; */
+    float: right;
+}
+
+#accountStatus {
+    float: right;
+    display: inline-block;
+}
+
+#backBtn {
+    margin-top: 20px;
+    margin-right: 10px;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+
+}
+
+#content {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#submitBtn {
+    margin-top: 20px;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+}
+
+#UserName {
+    border: 0px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    box-shadow: 0px 0px 2px 2px rgb(123, 121, 121);
+    padding: 10px;
+
+}
+
+#Password {
+    border: 0px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    box-shadow: 0px 0px 2px 2px rgb(123, 121, 121);
+    padding: 10px;
+
+}
+
+#FirstName {
+    border: 0px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    box-shadow: 0px 0px 2px 2px rgb(123, 121, 121);
+    padding: 10px;
+
+}
+
+#LastName {
+    border: 0px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    box-shadow: 0px 0px 2px 2px rgb(123, 121, 121);
+    padding: 10px;
+
+}
+
+#emailID {
+    border: 0px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    box-shadow: 0px 0px 2px 2px rgb(123, 121, 121);
+    padding: 10px;
+
+}
+
+#PhoneNo {
+    border: 0px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    box-shadow: 0px 0px 2px 2px rgb(123, 121, 121);
+    padding: 10px;
+
+}
+
+#AadharNumber {
+    border: 0px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    box-shadow: 0px 0px 2px 2px rgb(123, 121, 121);
+    padding: 10px;
+
+}
+
+#PanNumber {
+    border: 0px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    box-shadow: 0px 0px 2px 2px rgb(123, 121, 121);
+    padding: 10px;
+
+}
+
+#FlatNumber{
+    border: 0px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    box-shadow: 0px 0px 2px 2px rgb(123, 121, 121);
+    padding: 10px;
+
+}
+
+#BuildingName{
+    border: 0px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    box-shadow: 0px 0px 2px 2px rgb(123, 121, 121);
+    padding: 10px;
+
+}
+
+#City{
+    border: 0px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    box-shadow: 0px 0px 2px 2px rgb(123, 121, 121);
+    padding: 10px;
+
+}
+
+#State{
+    border: 0px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    box-shadow: 0px 0px 2px 2px rgb(123, 121, 121);
+    padding: 10px;
+
+}
+
+#allDetails{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#heading{
+    display: flex;
+    justify-content: center;
+}
+
+#combine{
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+}
