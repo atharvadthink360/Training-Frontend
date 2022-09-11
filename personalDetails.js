@@ -10,12 +10,22 @@ function personalDetails() {
 
     document.getElementById("mainsection").innerHTML = "";
 
+    var title = document.createElement("h1")
+    var titleNode = document.createTextNode('Personal Details');
+    title.appendChild(titleNode);
+    var mainsection = document.getElementById("mainsection")
+    mainsection.appendChild(title)
+    title.setAttribute("id","heading")
+
     var form = document.createElement("form");
+    form.setAttribute("id","content")
 
     var FN = document.createElement("input");
     FN.setAttribute("type", "text");
     FN.setAttribute("id", "FirstName");
     FN.setAttribute("placeholder", "First Name");
+
+    var br = document.createElement("br");
 
     var LN = document.createElement("input");
     LN.setAttribute("type", "text");
@@ -35,6 +45,7 @@ function personalDetails() {
     var s = document.createElement("input");
     s.setAttribute("type", "submit");
     s.setAttribute("value", "Submit");
+    s.setAttribute("id", "submitBtn")
 
     form.appendChild(FN);
 

@@ -3,6 +3,7 @@ function loginDetails() {
     document.getElementById("mainsection").innerHTML = "";
 
     var form = document.createElement("form");
+    form.setAttribute("id","content")
 
     var UN = document.createElement("input");
     UN.setAttribute("type", "text");
@@ -17,6 +18,7 @@ function loginDetails() {
     var s = document.createElement("input");
     s.setAttribute("type", "submit");
     s.setAttribute("value", "Submit");
+    s.setAttribute("id", "submitBtn")
 
     form.appendChild(UN);
 

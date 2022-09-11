@@ -7,6 +7,7 @@ function addElement() {
     // document.body.appendChild(h);
 
     var p = document.createElement("p");
+    p.setAttribute("id","header")
     var txt = document.createTextNode("Info Tracker");
     p.appendChild(txt);
     h.appendChild(p);

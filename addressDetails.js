@@ -11,6 +11,14 @@ function addressDetails() {
     document.getElementById("mainsection").innerHTML = "";
 
     var form = document.createElement("form");
+    form.setAttribute("id","content")
+
+    var title = document.createElement("h1")
+    var titleNode = document.createTextNode('Address Details');
+    title.appendChild(titleNode);
+    var mainsection = document.getElementById("mainsection")
+    mainsection.appendChild(title)
+    title.setAttribute("id","heading")
 
     var FlatN = document.createElement("input");
     FlatN.setAttribute("type", "number");
@@ -84,6 +92,7 @@ function addressDetails() {
     var s = document.createElement("input");
     s.setAttribute("type", "submit");
     s.setAttribute("value", "Submit");
+    s.setAttribute("id", "submitBtn")
 
     form.appendChild(FlatN);
     form.appendChild(br.cloneNode());

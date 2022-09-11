@@ -11,6 +11,14 @@ function govtDetails() {
     document.getElementById("mainsection").innerHTML = "";
 
     var form = document.createElement("form");
+    form.setAttribute("id","content")
+
+    var title = document.createElement("h1")
+    var titleNode = document.createTextNode('ID Details');
+    title.appendChild(titleNode);
+    var mainsection = document.getElementById("mainsection")
+    mainsection.appendChild(title)
+    title.setAttribute("id","heading")
 
     var AN = document.createElement("input");
     AN.setAttribute("type", "number");
@@ -30,6 +38,7 @@ function govtDetails() {
     var s = document.createElement("input");
     s.setAttribute("type", "submit");
     s.setAttribute("value", "Submit");
+    s.setAttribute("id", "submitBtn")
 
     form.appendChild(AN);
     form.appendChild(br.cloneNode());
@@ -37,10 +46,10 @@ function govtDetails() {
     form.appendChild(PAN);
     form.appendChild(br.cloneNode());
 
-    form.appendChild(back);
-    form.appendChild(br.cloneNode());
+    // form.appendChild(back);
+    // form.appendChild(br.cloneNode());
 
-    form.appendChild(s);
+    // form.appendChild(s);
 
     // PN.setAttribute("required", "");
 
@@ -53,6 +62,12 @@ function govtDetails() {
 
         personalDetails();
     }
+
+    var combine = document.createElement("div")
+    combine.appendChild(back)
+    combine.appendChild(s)
+    combine.setAttribute("id", "combine")
+    form.appendChild(combine)
 
     form.onsubmit = function (e) {
         console.log(e);
